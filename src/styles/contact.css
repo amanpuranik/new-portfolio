@@ -1,0 +1,37 @@
+.containerContact {
+    display: flex;
+    flex-direction: column;
+    color: red;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    .card {
+        height: 400px;
+        /* background-color: rgb(45, 44, 44); */
+        background-color: #1b1b29eb;
+        
+        display: flex;
+        flex-direction: column;
+        border-radius: 30px;
+
+
+        .content {
+            font-family: 'Roboto Mono', monospace;
+            display: flex;
+            color: white;
+            gap: 50px;
+            justify-content: center;
+
+
+            .email {
+                display: flex;
+                gap: 30px;
+
+                .linkedin {
+                    color: white;
+                }
+            }
+        }
+    }
+}
