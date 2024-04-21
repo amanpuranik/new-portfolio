@@ -21,7 +21,7 @@ const Contact = () => (
                 <div className='email'>
                     <EmailOutlinedIcon />
                     <div>
-                        avpurani@uwaterloo.ca
+                        <a href="mailto:avpurani@uwaterloo.ca">avpurani@uwaterloo.ca</a>
                     </div>
                 </div>
                 <div className='email'>
@@ -31,9 +31,9 @@ const Contact = () => (
 
                 <div className='email'>
                     <LinkedInIcon />
-                    <a className='linkedin' href="linkedin.com/in/amanpuranik"> linkedin.com/in/amanpuranik</a>
+                    <a className='linkedin' href="https://linkedin.com/in/amanpuranik" target="_blank">linkedin.com/in/amanpuranik</a>
                 </div>
-                
+
 
             </CardContent>
 

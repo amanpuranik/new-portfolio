@@ -7,6 +7,9 @@
     height: 100vh;
 
     .card {
+        a {
+            color: white;
+        }
         height: 400px;
         /* background-color: rgb(45, 44, 44); */
         background-color: #1b1b29eb;

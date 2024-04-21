@@ -9,7 +9,7 @@
   flex-direction: column;
 
   .default {
-    margin-top: 100px;
+    margin-top: 200px;
     display: flex;
     justify-content: center;
     gap:400px;

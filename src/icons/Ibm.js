@@ -4,7 +4,7 @@ import React from 'react';
 const Ibm = () => (
     <svg className='ibmLogo' version="1.0" xmlns="http://www.w3.org/2000/svg"
         width="2560.000000pt" height="1027.000000pt" viewBox="0 0 2560.000000 1027.000000"
-        preserveAspectRatio="xMidYMid meet">
+        preserveAspectRatio="xMidYMid meet" style={{transform:"scale(2)"}}>
 
         <g transform="translate(0.000000,1027.000000) scale(0.100000,-0.100000)"
             fill="#000000" stroke="none">

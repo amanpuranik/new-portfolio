@@ -3,17 +3,25 @@
 .timelineContainer {
     padding-top: 100px !important;
     overflow-y: scroll;
-    height: 500px;
+    max-height: 1000px;
+    height: 100%;
 
     &::before {
-        height: 2029px;
+        height: 2029px !important;
     }
     
     .vertical-timeline-element-content {
-        font-family: 'Poiret One', sans-serif;;
+        font-family: 'Roboto Mono', monospace;
         background-color: #10102aeb;
         color: white;
         min-height: 400px;
+    }
+    .vertical-timeline::before {
+        height: 2030px !important;
+    }
+
+    .vertical-timeline-element--work-last {
+        margin-bottom: 300px !important;
     }
 }
 
