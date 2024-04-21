@@ -59,7 +59,10 @@ const Experience = () => (
       <h3 className="vertical-timeline-element-title">Software Developer - Bank of Montreal</h3>
       <h4 className="vertical-timeline-element-subtitle">Toronto, ON</h4>
       <p>
-        The Bank of Montreal is one of the biggest banks in Canada 
+        The Bank of Montreal is one of the biggest banks in Canada and I was able to work here during a period of rapid digital transformation. <br></br>
+        At BMO, I was working on building out a tablet application that BMO sales employees would use to sell various financial products such as credit cards. It was here I learned that Angular could be used to develop for a mobile context. <br></br>
+        If there is one value I gained from BMO, it would probably be the importance of knowing how to learn. I was working with tools that I had never worked with in the past, so knowing how to pick up skills at a fast pace was imperative. <br></br> 
+        But this skillset is imperative anywhere in tech, with new tools constanlty being released and the landscape consntantly changing. So I'm thankful I "learned how to learn" early on in my career.
       </p>
     </VerticalTimelineElement>
 
@@ -68,13 +71,15 @@ const Experience = () => (
       date="Sept 2020 - Dec 2020"
       iconStyle={{ background: 'white', color: '#fff' }}
       icon={<Digitaled />}
-
-
     >
-      <h3 className="vertical-timeline-element-title">Art Director</h3>
-      <h4 className="vertical-timeline-element-subtitle">San Francisco, CA</h4>
+      <h3 className="vertical-timeline-element-title">Full Stack Developer - DigitalEd</h3>
+      <h4 className="vertical-timeline-element-subtitle">Waterloo, ON</h4>
       <p>
-        Creative Direction, User Experience, Visual Design, SEO, Online Marketing
+        DigitalEd is an ed-tech startup based in Waterloo, Ontario that specialized in making software that assists in the creation and deployment of STEM courses for universities and colleges. <br></br>
+        DigitalEd also was my first job/intenrship in tech ever and acted as my entrance into the field. This being my first job was very intimidating if I'm being honest. I suddenly felt like there were so many concepts and prinicples that I had to learn to be able to code in an enterprise setting. <br></br>
+        It was here I realised that writing code for fun little side projects was not the same as writing code for work. I was lucky to have an extremely gracious mentor however, and I was able to learn a lot from him in a very short amount of time. <br></br>
+        One value that I took out of this work experience would be that the learning never stops. The only thing I know when it comes to tech is that I know nothing. 
+
       </p>
     </VerticalTimelineElement>
 

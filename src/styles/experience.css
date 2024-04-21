@@ -7,7 +7,7 @@
     height: 100%;
 
     &::before {
-        height: 2029px !important;
+        height: 2729px !important;
     }
     
     .vertical-timeline-element-content {
@@ -17,7 +17,7 @@
         min-height: 400px;
     }
     .vertical-timeline::before {
-        height: 2030px !important;
+        height: 2930px !important;
     }
 
     .vertical-timeline-element--work-last {
