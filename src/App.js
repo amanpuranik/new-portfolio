@@ -2,7 +2,6 @@ import logo from './logo.svg';
 import './App.css';
 import  { AppBar, Toolbar, Stack, Button, Typography } from '@mui/material'
 import { TypeAnimation } from 'react-type-animation';
-import Font, { Text } from 'react-font'
 import { BrowserRouter as Router, Routes, Route, Link,Outlet, Navigate } from 'react-router-dom';
 import About from './components/About';
 import Home from './Home';
