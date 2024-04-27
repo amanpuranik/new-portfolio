@@ -36,7 +36,7 @@ function App() {
 
         {/* Navigation items on the right */}
         <Button color="inherit" component={Link} to="/about">About me</Button>
-        <Button color="inherit" component={Link} to="/experience">Experience</Button>
+        <Button color="inherit" component={Link} to="/experience">Expersience</Button>
         <Button color="inherit" component={Link} to="/contact" >Contact</Button>
         <Button onClick={openResume} color="inherit">Resume</Button>
       </Toolbar>
