@@ -1,6 +1,7 @@
 import React from 'react';
 import { TypeAnimation } from 'react-type-animation';
 
+
 const sequence = [
     ' a Developer',   // Types 'One'
     4000,    // Waits 1s
@@ -14,7 +15,7 @@ const sequence = [
 const Home = () => (
     <div className='content'>
       <div className='default'>
-        <img className='profilePic' src="/profilepic.jpeg" />
+      <img className='profilePic' src={process.env.PUBLIC_URL + '/profilepic.jpeg'} alt="Profile Picture" />
 
         <div className='text'>Hey I'm Aman! Im&nbsp;  <TypeAnimation sequence={sequence} cursor={true} repeat={Infinity} style={{ display: 'flex' }}  /> </div>
         
