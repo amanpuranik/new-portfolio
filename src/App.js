@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import  { AppBar, Toolbar, Stack, Button, Typography } from '@mui/material'
 import { TypeAnimation } from 'react-type-animation';
-import { BrowserRouter as Router, Routes, Route, Link,Outlet, Navigate } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link,Outlet, Navigate, HashRouter } from 'react-router-dom';
 import About from './components/About';
 import Home from './Home';
 import Experience from './components/Experience'
@@ -25,7 +25,7 @@ const openResume = () => {
 
 function App() {
   return (
-<Router>
+<HashRouter>
   <div className='container'>
     <AppBar className='appBar' position="static">
       <Toolbar>
@@ -59,7 +59,7 @@ function App() {
     {/* Render other components or content for the root path "/" */}
     <Route path="/home" element={<Home />} />
   </Routes>
-</Router>
+</HashRouter>
 
   );
 }
