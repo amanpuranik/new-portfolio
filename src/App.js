@@ -30,7 +30,7 @@ function App() {
     <AppBar className='appBar' position="static">
       <Toolbar>
         {/* Title on the left */}
-        <Typography component={Link} to="/" className='name' variant="h6" sx={{ flexGrow: 1 }}>
+        <Typography component={Link} to="/home" className='name' variant="h6" sx={{ flexGrow: 1 }}>
           Aman Puranik
         </Typography>
 
@@ -57,7 +57,7 @@ function App() {
 
 
     {/* Render other components or content for the root path "/" */}
-    <Route path="/" element={<Home />} />
+    <Route path="/home" element={<Home />} />
   </Routes>
 </Router>
 
