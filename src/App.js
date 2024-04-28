@@ -19,7 +19,7 @@ const sequence = [
 
 const openResume = () => {
   // Replace 'path/to/your/resume.pdf' with the actual path to your file
-  const fileUrl = "/resume.pdf";
+  const fileUrl = process.env.PUBLIC_URL + "/resume.pdf";
   window.open(fileUrl, '_blank');
 };
 
