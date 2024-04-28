@@ -1,8 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
-import  { AppBar, Toolbar, Stack, Button, Typography } from '@mui/material'
+import { AppBar, Toolbar, Stack, Button, Typography } from '@mui/material'
 import { TypeAnimation } from 'react-type-animation';
-import { BrowserRouter as Router, Routes, Route, Link,Outlet, Navigate, HashRouter } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link, Outlet, Navigate, HashRouter, useLocation } from 'react-router-dom';
 import About from './components/About';
 import Home from './Home';
 import Experience from './components/Experience'
@@ -24,42 +24,49 @@ const openResume = () => {
 };
 
 function App() {
+  const isBaseURL = window.location.hash === '';
   return (
-<HashRouter>
-  <div className='container'>
-    <AppBar className='appBar' position="static">
-      <Toolbar>
-        {/* Title on the left */}
-        <Typography component={Link} to="/home" className='name' variant="h6" sx={{ flexGrow: 1 }}>
-          Aman Puranik
-        </Typography>
+    <>
+      <HashRouter>
+        {isBaseURL ? (<Navigate to="/home" />
+        ) : null}
 
-        {/* Navigation items on the right */}
-        <Button color="inherit" component={Link} to="/about">About me</Button>
-        <Button color="inherit" component={Link} to="/experience">Experience</Button>
-        <Button color="inherit" component={Link} to="/contact" >Contact</Button>
-        <Button onClick={openResume} color="inherit">Resume</Button>
-      </Toolbar>
-    </AppBar>
+        <div className='container'>
+          <AppBar className='appBar' position="static">
+            <Toolbar>
+              {/* Title on the left */}
+              <Typography component={Link} to="/home" className='name' variant="h6" sx={{ flexGrow: 1 }}>
+                Aman Puranik
+              </Typography>
 
-    {/* Parallax stars HTML structure */}
-    <div id="stars"></div>
-    <div id="stars2"></div>
-    <div id="stars3"></div>
+              {/* Navigation items on the right */}
+              <Button color="inherit" component={Link} to="/about">About me</Button>
+              <Button color="inherit" component={Link} to="/experience">Experience</Button>
+              <Button color="inherit" component={Link} to="/contact" >Contact</Button>
+              <Button onClick={openResume} color="inherit">Resume</Button>
+            </Toolbar>
+          </AppBar>
 
-  </div>
+          {/* Parallax stars HTML structure */}
+          <div id="stars"></div>
+          <div id="stars2"></div>
+          <div id="stars3"></div>
 
-  <Routes>
-    {/* Render the Experience component only for the /experience path */}
-    <Route path="/about" element={<About />} />
-    <Route path="/experience" element={<Experience />} />
-    <Route path="/contact" element={<Contact />} />
+        </div>
+
+        <Routes>
+          {/* Render the Experience component only for the /experience path */}
+          <Route path="/about" element={<About />} />
+          <Route path="/experience" element={<Experience />} />
+          <Route path="/contact" element={<Contact />} />
 
 
-    {/* Render other components or content for the root path "/" */}
-    <Route path="/home" element={<Home />} />
-  </Routes>
-</HashRouter>
+          {/* Render other components or content for the root path "/" */}
+          <Route path="/home" element={<Home />} />
+        </Routes>
+      </HashRouter>
+
+    </>
 
   );
 }
