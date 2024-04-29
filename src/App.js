@@ -27,7 +27,7 @@ function App() {
   const isBaseURL = window.location.hash === '';
   return (
     <>
-      <BrowserRouter>
+      <HashRouter>
         {/* {isBaseURL ? (<Navigate to="/home" />
         ) : null} */}
 
@@ -35,14 +35,14 @@ function App() {
           <AppBar className='appBar' position="static">
             <Toolbar>
               {/* Title on the left */}
-              <Typography component={Link} to="/new-portfolio/home" className='name' variant="h6" sx={{ flexGrow: 1 }}>
+              <Typography component={Link} to="/" className='name' variant="h6" sx={{ flexGrow: 1 }}>
                 Aman Puranik
               </Typography>
 
               {/* Navigation items on the right */}
-              <Button color="inherit" component={Link} to="/new-portfolio/about">About me</Button>
-              <Button color="inherit" component={Link} to="/new-portfolio/experience">Experience</Button>
-              <Button color="inherit" component={Link} to="/new-portfolio/contact" >Contact</Button>
+              <Button color="inherit" component={Link} to="/about">About me</Button>
+              <Button color="inherit" component={Link} to="/experience">Experience</Button>
+              <Button color="inherit" component={Link} to="/contact" >Contact</Button>
               <Button onClick={openResume} color="inherit">Resume</Button>
             </Toolbar>
           </AppBar>
@@ -56,15 +56,15 @@ function App() {
 
         <Routes>
           {/* Render the Experience component only for the /experience path */}
-          <Route path="/new-portfolio/about" element={<About />} />
-          <Route path="/new-portfolio/experience" element={<Experience />} />
-          <Route path="/new-portfolio/contact" element={<Contact />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/experience" element={<Experience />} />
+          <Route path="/contact" element={<Contact />} />
 
 
           {/* Render other components or content for the root path "/" */}
-          <Route path="/new-portfolio/home" element={<Home />} />
+          <Route path="/" element={<Home />} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
 
     </>
 
