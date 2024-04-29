@@ -27,7 +27,7 @@ function App() {
   const isBaseURL = window.location.hash === '';
   return (
     <>
-      <HashRouter>
+      <BrowserRouter  basename="/new-portfolio">
         {/* {isBaseURL ? (<Navigate to="/home" />
         ) : null} */}
 
@@ -64,7 +64,7 @@ function App() {
           {/* Render other components or content for the root path "/" */}
           <Route path="/" element={<Home />} />
         </Routes>
-      </HashRouter>
+      </BrowserRouter>
 
     </>
 
