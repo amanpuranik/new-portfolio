@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import { AppBar, Toolbar, Stack, Button, Typography } from '@mui/material'
 import { TypeAnimation } from 'react-type-animation';
-import { BrowserRouter as Router, Routes, Route, Link, Outlet, Navigate, HashRouter, useLocation } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link, Outlet, Navigate, HashRouter, useLocation, BrowserRouter } from 'react-router-dom';
 import About from './components/About';
 import Home from './Home';
 import Experience from './components/Experience'
@@ -27,9 +27,9 @@ function App() {
   const isBaseURL = window.location.hash === '';
   return (
     <>
-      <HashRouter>
-        {isBaseURL ? (<Navigate to="/home" />
-        ) : null}
+      <BrowserRouter>
+        {/* {isBaseURL ? (<Navigate to="/home" />
+        ) : null} */}
 
         <div className='container'>
           <AppBar className='appBar' position="static">
@@ -64,7 +64,7 @@ function App() {
           {/* Render other components or content for the root path "/" */}
           <Route path="/home" element={<Home />} />
         </Routes>
-      </HashRouter>
+      </BrowserRouter>
 
     </>
 
